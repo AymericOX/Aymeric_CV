@@ -7,7 +7,7 @@ address: "Université de Sherbrooke, Canada"
 phone: +33 652347282
 #www: mariecurie.com
 email: "oliveira.xavier.aymeric@gmail.com"
-#twitter: mariecurie
+twitter: AymericOX
 #github: mariecurie
 #linkedin: mariecurie
 #aboutme: "insert information about me here"
@@ -110,6 +110,17 @@ grants_and_funding %>%
 
 ```{r}
 honors_and_awards %>% 
+  detailed_entries(with,
+                   where,
+                   what,
+                   when,
+                   why)
+```
+
+# Presentation
+
+```{r}
+presentation %>% 
   detailed_entries(with,
                    where,
                    what,
